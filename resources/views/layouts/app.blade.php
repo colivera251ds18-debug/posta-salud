@@ -18,11 +18,27 @@
                 <li><a href="#">Atenciones</a></li>
             </ul>
         </nav>
+        
+        <style>
+            .aviso-ok    { border-left: 6px solid #2f7d52; }
+            .aviso-error { border-left: 6px solid #b3261e; }
+            .acciones    { display: flex; gap: 1rem; align-items: center; }
+        </style>
+
+
     </header>
 
     <main class="container">
+        @if (session('ok'))
+            <article class="aviso-ok">{{ session('ok') }}</article>
+        @endif
+        @if (session('error'))
+            <article class="aviso-error">{{ session('error') }}</article>
+        @endif
+    
         @yield('contenido')
     </main>
+
 
     <footer class="container">
         <small>DSI406 · Tecnología Backend · IES Túpac Amaru</small>

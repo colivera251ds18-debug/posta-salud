@@ -16,7 +16,7 @@ Proyecto integrador de DSI406 Tecnología Backend (Laravel + PostgreSQL).
 7. php artisan migrate
 8. php artisan serve
 
-Autor: TU NOMBRE COMPLETO
+Autor: Carlos Olivera
 
 ## Datos de prueba
 Comando: php artisan migrate:fresh --seed
@@ -26,3 +26,4 @@ Comando: php artisan migrate:fresh --seed
 | admin@posta.test      | administrador   | password   |
 | medico@posta.test     | personal_medico | password   |
 | recepcion@posta.test  | recepcion       | password   |
+

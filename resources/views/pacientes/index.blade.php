@@ -41,5 +41,5 @@
             @endforelse
         </tbody>
     </table>
-    {{ $pacientes->links() }}
+    {{ $pacientes->links('pagination::simple-default') }}
 @endsection

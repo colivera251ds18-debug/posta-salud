@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo', 'Inicio') · {{ config('app.name') }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        .aviso-ok    { border-left: 6px solid #2f7d52; }
+        .aviso-error { border-left: 6px solid #b3261e; }
+        .acciones    { display: flex; gap: 1rem; align-items: center; }
+    </style>
 </head>
 <body>
     <header class="container">
@@ -18,14 +23,6 @@
                 <li><a href="#">Atenciones</a></li>
             </ul>
         </nav>
-        
-        <style>
-            .aviso-ok    { border-left: 6px solid #2f7d52; }
-            .aviso-error { border-left: 6px solid #b3261e; }
-            .acciones    { display: flex; gap: 1rem; align-items: center; }
-        </style>
-
-
     </header>
 
     <main class="container">

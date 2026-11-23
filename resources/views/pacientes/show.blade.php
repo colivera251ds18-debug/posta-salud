@@ -20,8 +20,8 @@
  
     <h2>Últimas citas</h2>
     @forelse ($citas as $cita)
-        <p>{{ $cita->fecha_hora->format('d/m/Y H:i') }}
-{{ $cita->personalMedico->especialidad }} · {{ $cita->estado }}</p>
+        <p>{{ $cita->fecha_hora->format('d/m/Y H:i') }} ·
+           {{ $cita->personalMedico->especialidad }} · {{ $cita->estado }}</p>
     @empty
         <p>Este paciente no tiene citas registradas.</p>
     @endforelse
